@@ -4,23 +4,32 @@ import Header from "./components/Header";
 import UserContainer from './components/UserContainer';
 import AboutUs from './components/AboutUs';
 import './App.css';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Toaster } from 'react-hot-toast';
 
 const App: React.FC = () => {
   return (
     <>
-      <ToastContainer
-        position="bottom-right"
-        autoClose={3000}
-        hideProgressBar={true}
-        newestOnTop
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
+      <Toaster
+          position="bottom-center"
+          reverseOrder={false}
+          toastOptions={{
+            // Define default options
+            className: '',
+            duration: 3000,
+            // style: {
+            //   background: '#363636',
+            //   color: '#fff',
+            // },
+            // Default options for specific types
+            success: {
+              duration: 3000,
+              // theme: {
+              //   primary: 'green',
+              //   secondary: 'black',
+              // },
+            },
+          }}
+        />
       <Header />
       <Routes>
         <Route path="/" element={<UserContainer />} />
