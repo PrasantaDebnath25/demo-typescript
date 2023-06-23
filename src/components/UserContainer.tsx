@@ -37,10 +37,10 @@ const UserContainer = () => {
         <div>
             <main>
                 <div className="container py-4">
-                    {authData.currentuser !== '' ?
+                    {authData.currentUser !== '' ?
                         <>
                             <div className="d-flex justify-content-between">
-                                <h2 className="text-light">Welcome {authData.currentuser} !!</h2>
+                                <h2 className="text-light">Welcome {authData.currentUser} !!</h2>
                             </div>
                         </>
                         :
@@ -58,7 +58,7 @@ const UserContainer = () => {
                                         Company: <b>{user.company.name}</b>
                                     </small>
                                     <br /><br />
-                                    {authData.currentuser ?
+                                    {authData.currentUser ?
                                         <div>
                                             {
                                                 (user.islike === 0) ?
