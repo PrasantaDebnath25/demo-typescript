@@ -1,6 +1,6 @@
 type CurrentState = {
     isLoggedIn: boolean,
-    currentuser: string
+    currentUser: string
 }
 
 type CurrentAction = {
@@ -10,7 +10,7 @@ type CurrentAction = {
 
 const initialState = {
     isLoggedIn: false,
-    currentuser: ''
+    currentUser: ''
 }
 
 const authReducer = (state: CurrentState = initialState, action: CurrentAction) => {
@@ -18,13 +18,13 @@ const authReducer = (state: CurrentState = initialState, action: CurrentAction) 
         case 'LOGIN_SUCCESS':
             return {
                 isLoggedIn: true,
-                currentuser: action.payload
+                currentUser: action.payload
 
             }
         case 'LOGIN_FAILURE':
             return {
                 isLoggedIn: false,
-                currentuser: ''
+                currentUser: ''
             }
         case 'LOGOUT_SUCCESS':
             return {
