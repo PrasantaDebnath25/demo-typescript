@@ -6,15 +6,11 @@ import Visibility from '@material-ui/icons/Visibility';
 import { useDispatch } from 'react-redux';
 import { loginAction } from '../../redux/action';
 import { Link } from 'react-router-dom';
-import { loginType } from '../../interfaces';
+import { loginType, modalType } from '../../interfaces';
 
-type propsType = {
-    loginModal: boolean,
-    toggleLoginModal: any,
-    toggleSignUpModal: any,
-}
 
-const LoginModal = (props: propsType) => {
+
+const LoginModal = (props: modalType) => {
 
     const dispatch = useDispatch();
     const [showPassword, setShowPassword] = useState<boolean>(false);

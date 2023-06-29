@@ -28,3 +28,9 @@ export interface authData {
     isLoggedIn: boolean,
     currentuser: string
 }
+
+export interface  modalType {
+    loginModal: boolean,
+    toggleLoginModal: any,
+    toggleSignUpModal: any,
+}
