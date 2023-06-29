@@ -34,3 +34,9 @@ export interface  loginModalType {
     toggleLoginModal: any,
     toggleSignUpModal: any,
 }
+
+export interface  signUpModalType {
+    signUpModal: boolean,
+    toggleSignUpModal: any,
+    toggleLoginModal: any
+}

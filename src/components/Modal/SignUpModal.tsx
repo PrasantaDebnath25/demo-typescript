@@ -1,14 +1,9 @@
 import { Modal } from 'reactstrap';
 import { Button, TextField } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import { signUpModalType } from '../../interfaces';
 
-type propsType = {
-    signUpModal: boolean,
-    toggleSignUpModal: any,
-    toggleLoginModal: any
-}
-
-const SignUpModal = (props: propsType) => {
+const SignUpModal = (props: signUpModalType) => {
 
     return (
         <div>
