@@ -29,7 +29,7 @@ export interface authData {
     currentuser: string
 }
 
-export interface  modalType {
+export interface  loginModalType {
     loginModal: boolean,
     toggleLoginModal: any,
     toggleSignUpModal: any,
