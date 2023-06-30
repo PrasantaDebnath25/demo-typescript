@@ -56,7 +56,6 @@ const LoginModal = (props: propsType) => {
                     </button>
                 </div>
                 <div className="modal-body">
-                    
                     <form onSubmit={onSubmit}>
                         <div className="form-group">
                             <TextField
