@@ -50,7 +50,7 @@ const LoginModal = (props: propsType) => {
         <div>
             <Modal isOpen={props.loginModal} toggle={props.toggleLoginModal}>
                 <div className="modal-header">
-                    <h3 className="modal-title" id="loginModalLabel">Sign In</h3>
+                    <h3 className="modal-title" id="loginModalLabel">Log in</h3>
                     <button type="button" className="close" onClick={props.toggleLoginModal} aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -94,7 +94,7 @@ const LoginModal = (props: propsType) => {
                         }
                         <div className="form-group">
                             <Button type="submit" variant="contained" color="primary">
-                                Sign In
+                            Log in
                             </Button>
                         </div>
                         <h6>Not yet a member? <Link to="" onClick={props.toggleSignUpModal}>Sign Up</Link>
