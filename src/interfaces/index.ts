@@ -26,7 +26,7 @@ export interface loginType {
 
 export interface authData {
     isLoggedIn: boolean,
-    currentuser: string
+    currentUser: string
 }
 
 export interface  loginModalType {

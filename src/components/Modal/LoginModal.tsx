@@ -31,7 +31,7 @@ const LoginModal = (props: loginModalType) => {
 
     const onSubmit = (e: React.SyntheticEvent) => {
         e.preventDefault();
-        console.log(data);
+        
         dispatch(loginAction(data));
         props.toggleLoginModal(!props.loginModal);
         setData({
@@ -40,6 +40,7 @@ const LoginModal = (props: loginModalType) => {
             login_password: '',
         })
     }
+    console.log("data---", data);
 
 
     return (
