@@ -16,12 +16,13 @@ const UserContainer = () => {
     const userData: userData = useSelector((state: RootState) => state.userReducer);
     const authData: authData = useSelector((state: RootState) => state.authReducer);
 
-    //Modal
+    //Login Modal 
     const toggleLoginModal = (): void => {
         setLoginModal(!loginModal);
         setSignUpModal(false);
     };
 
+    //Signup Modal 
     const toggleSignUpModal = (): void => {
         setSignUpModal(!signUpModal);
         setLoginModal(false);
