@@ -29,7 +29,7 @@ const Header: React.FC = () => {
         setLoginModal(false);
     }
 
-    //Logout
+    //Logout user
     const onLogout = () => {
         dispatch(logoutAction());
     }

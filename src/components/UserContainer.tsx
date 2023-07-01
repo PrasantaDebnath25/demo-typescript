@@ -117,7 +117,7 @@ const UserContainer = () => {
                                         </div>
                                         :
                                         <>
-                                            <i className="fas fa-thumbs-up text-success"
+                                            <i className="fas fa-thumbs-up text-success" 
                                                 style={{ cursor: 'pointer', userSelect: 'none' }}
                                                 onClick={toggleLoginModal}
                                             >
