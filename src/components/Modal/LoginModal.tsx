@@ -94,7 +94,7 @@ const LoginModal = (props: propsType) => {
                         }
                         <div className="form-group">
                             <Button type="submit" variant="contained" color="primary">
-                            Log in
+                                Log in
                             </Button>
                         </div>
                         <h6>Not yet a member? <Link to="" onClick={props.toggleSignUpModal}>Sign Up</Link>
