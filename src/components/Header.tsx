@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
     const authData: authData = useSelector((state: RootState) => state.authReducer);
 
-    // console.log(authData);
+    console.log(authData);
 
     //Modal
     const toggleLoginModal = (): void => {
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
         setLoginModal(false);
     }
 
-    //Logout
+    //Logout user
     const onLogout = () => {
         dispatch(logoutAction());
     }

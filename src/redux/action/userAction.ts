@@ -22,26 +22,7 @@ export const fetchUsersFailure = (error: string) => {
     }
 }
 
-export const updateLikes = (id: number, count: number) => {
-    return {
-        type: 'UPDATE_LIKES',
-        payload: {
-            id: id,
-            count: count
-        }
-    }
-}
-
-export const updateDislikes = (id: number, count: number) => {
-    return {
-        type: 'UPDATE_DISLIKES',
-        payload: {
-            id: id,
-            count: count
-        }
-    }
-}
-
+//Fetch user from Api
 export const fetchUsers = () => {
     return (dispatch: Dispatch) => {
         dispatch(fetchUsersRequest())
@@ -65,3 +46,24 @@ export const fetchUsers = () => {
             })
     }
 }
+
+export const updateLikes = (id: number, count: number) => {
+    return {
+        type: 'UPDATE_LIKES',
+        payload: {
+            id: id,
+            count: count
+        }
+    }
+}
+
+export const updateDislikes = (id: number, count: number) => {
+    return {
+        type: 'UPDATE_DISLIKES',
+        payload: {
+            id: id,
+            count: count
+        }
+    }
+}
+
