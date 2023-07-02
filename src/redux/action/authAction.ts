@@ -28,6 +28,6 @@ export const logoutAction = () => {
             type: 'LOGOUT_SUCCESS',
         })
         console.log("Logout Success");
-        // ToastHot.success("Logout Success");
+        ToastHot.success("Logout Success");
     }
 }
